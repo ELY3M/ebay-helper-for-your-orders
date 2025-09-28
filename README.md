@@ -12,4 +12,4 @@ I work on desktop most of the time.
 I am not sure if it will work on mobile browsers.  
 
 
-![ebay-orders](https://github.com/ELY3M/ebay-helper-for-your-orders/ebay-orders.png)
+![ebay-orders](https://raw.githubusercontent.com/ELY3M/ebay-helper-for-your-orders/refs/heads/main/ebay-orders.png)
