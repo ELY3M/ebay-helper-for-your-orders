@@ -13,3 +13,6 @@ I am not sure if it will work on mobile browsers.
 
 
 ![ebay-orders](https://raw.githubusercontent.com/ELY3M/ebay-helper-for-your-orders/refs/heads/main/ebay-orders.png)
+
+Look at the first order of two items.   
+![ebay-orders2](https://raw.githubusercontent.com/ELY3M/ebay-helper-for-your-orders/refs/heads/main/ebay-orders2.png)
