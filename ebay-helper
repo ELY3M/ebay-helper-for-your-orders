@@ -1,0 +1,61 @@
+// ==UserScript==
+// @name     ebay helper
+// @version  1
+// @include       https://ebay.com/*
+// @include       https://www.ebay.com/*
+// @include       https://www.ebay.com/sh/ord/*
+// @include				https://www.ebay.com/mesh/ord/*
+// @run-at				document-start
+// ==/UserScript==
+
+function GM_addStyle(aCss) {
+  'use strict';
+  let head = document.getElementsByTagName('head')[0];
+  if (head) {
+    let style = document.createElement('style');
+    style.setAttribute('type', 'text/css');
+    style.textContent = aCss;
+    head.appendChild(style);
+    return style;
+  }
+  return null;
+};
+
+//enlarge the quality and highlight it
+GM_addStyle (`
+.quantity {
+font-size: 20pt;
+font-family: fixedsys;
+background-color: yellow;
+}
+`);
+
+
+/*
+<div class="tracking-info">
+  <div>
+    <div><button class="passive-link fake-link" data-ebayui="" type="button">+ Add tracking</button></div>
+  </div>
+</div>
+*/
+
+//adds checkboxes to the order items.  
+(function() {
+    'use strict';
+
+    // Wait for the document to be fully loaded
+    window.addEventListener('load', function() {
+        console.log("ebay checkboxes script ran");
+
+document.querySelectorAll('div.tracking-info').forEach(item => {
+  console.log("ebay div found");
+  const newHtmlContent = `<input type=checkbox>`;
+  item.innerHTML = newHtmlContent;  
+  
+  
+});
+
+    });
+})();
+
+
